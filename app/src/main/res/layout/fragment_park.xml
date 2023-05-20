@@ -1,0 +1,860 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ParkFragment">
+
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/popularTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="15dp"
+                android:text="Popular Parks"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <HorizontalScrollView
+                android:id="@+id/popular_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/popularTextView">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent">
+
+                    <ImageButton
+                        android:background="?android:attr/selectableItemBackground"
+                        android:id="@+id/arusha"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:srcCompat="@drawable/arusha_park" />
+
+                    <TextView
+                        android:id="@+id/textView2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:text="Arusha Park"
+                        android:textColor="@color/black"
+                        android:textSize="14sp"
+                        app:layout_constraintStart_toStartOf="@id/arusha"
+                        app:layout_constraintTop_toBottomOf="@id/arusha" />
+
+
+                    <ImageButton
+                        android:background="?android:attr/selectableItemBackground"
+                        android:id="@+id/mikumi"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="15dp"
+                        app:layout_constraintStart_toEndOf="@id/arusha"
+                        app:layout_constraintTop_toTopOf="@id/arusha"
+                        app:srcCompat="@drawable/mikumiwild" />
+
+                    <TextView
+                        android:id="@+id/textView3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="15dp"
+                        android:text="Mikumi Park"
+                        android:textColor="@color/black"
+                        android:textSize="14sp"
+                        app:layout_constraintStart_toEndOf="@id/arusha"
+                        app:layout_constraintTop_toBottomOf="@id/mikumi" />
+
+
+                    <ImageButton
+                        android:background="?android:attr/selectableItemBackground"
+                        android:id="@+id/saadani"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="15dp"
+                        app:layout_constraintStart_toEndOf="@id/mikumi"
+                        app:layout_constraintTop_toTopOf="@id/mikumi"
+                        app:srcCompat="@drawable/serengetiwild" />
+
+                    <TextView
+                        android:id="@+id/textView4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="15dp"
+                        android:text="Saadani Park"
+                        android:textColor="@color/black"
+                        android:textSize="14sp"
+                        app:layout_constraintStart_toEndOf="@id/mikumi"
+                        app:layout_constraintTop_toBottomOf="@id/saadani" />
+
+
+                    <ImageButton
+                        android:background="?android:attr/selectableItemBackground"
+                        android:id="@+id/serengeti"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="15dp"
+                        app:layout_constraintStart_toEndOf="@id/saadani"
+                        app:layout_constraintTop_toTopOf="@id/saadani"
+                        app:srcCompat="@drawable/serengeti_park" />
+
+                    <TextView
+                        android:id="@+id/textView5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="15dp"
+                        android:text="Serengeti Park"
+                        android:textColor="@color/black"
+                        android:textSize="14sp"
+                        app:layout_constraintStart_toEndOf="@id/saadani"
+                        app:layout_constraintTop_toBottomOf="@id/serengeti" />
+
+
+                    <ImageButton
+                        android:background="?android:attr/selectableItemBackground"
+                        android:id="@+id/tarangire"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="15dp"
+                        app:layout_constraintStart_toEndOf="@id/serengeti"
+                        app:layout_constraintTop_toTopOf="@id/serengeti"
+                        app:srcCompat="@drawable/saadani_park" />
+
+                    <TextView
+                        android:id="@+id/textView6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="15dp"
+                        android:text="Tarangire Park"
+                        android:textColor="@color/black"
+                        android:textSize="14sp"
+                        app:layout_constraintStart_toEndOf="@id/serengeti"
+                        app:layout_constraintTop_toBottomOf="@id/tarangire" />
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </HorizontalScrollView>
+
+            <TextView
+                android:id="@+id/arushaTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:text="Arusha National Park"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="@id/popularTextView"
+                app:layout_constraintTop_toBottomOf="@id/popular_view" />
+
+            <HorizontalScrollView
+                android:id="@+id/arusha_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/arushaTextView">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent">
+
+                    <ImageButton
+                        android:background="?android:attr/selectableItemBackground"
+                        android:id="@+id/arusha_background"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:srcCompat="@drawable/arusha_background" />
+
+                    <TextView
+                        android:id="@+id/textView7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:text="Park Background"
+                        android:textColor="@color/black"
+                        android:textSize="14sp"
+                        app:layout_constraintStart_toStartOf="@id/arusha_background"
+                        app:layout_constraintTop_toBottomOf="@id/arusha_background" />
+
+
+                    <ImageButton
+                        android:background="?android:attr/selectableItemBackground"
+                        android:id="@+id/arusha_wildlife"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="15dp"
+                        app:layout_constraintStart_toEndOf="@id/arusha_background"
+                        app:layout_constraintTop_toTopOf="@id/arusha_background"
+                        app:srcCompat="@drawable/arusha_wildlife" />
+
+                    <TextView
+                        android:id="@+id/textView8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="15dp"
+                        android:text="Wildlife"
+                        android:textColor="@color/black"
+                        android:textSize="14sp"
+                        app:layout_constraintStart_toEndOf="@id/arusha_background"
+                        app:layout_constraintTop_toBottomOf="@id/arusha_wildlife" />
+
+
+                    <ImageButton
+                        android:background="?android:attr/selectableItemBackground"
+                        android:id="@+id/arusha_vegetation"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="15dp"
+                        app:layout_constraintStart_toEndOf="@id/arusha_wildlife"
+                        app:layout_constraintTop_toTopOf="@id/arusha_wildlife"
+                        app:srcCompat="@drawable/arusha_vegetation" />
+
+                    <TextView
+                        android:id="@+id/textView9"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="15dp"
+                        android:text="Vegetation"
+                        android:textColor="@color/black"
+                        android:textSize="14sp"
+                        app:layout_constraintStart_toEndOf="@id/arusha_wildlife"
+                        app:layout_constraintTop_toBottomOf="@id/arusha_vegetation" />
+
+
+                    <ImageButton
+                        android:background="?android:attr/selectableItemBackground"
+                        android:id="@+id/arusha_location"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="15dp"
+                        app:layout_constraintStart_toEndOf="@id/arusha_vegetation"
+                        app:layout_constraintTop_toTopOf="@id/arusha_vegetation"
+                        app:srcCompat="@drawable/location" />
+
+                    <TextView
+                        android:id="@+id/textView10"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="15dp"
+                        android:text="Location"
+                        android:textColor="@color/black"
+                        android:textSize="14sp"
+                        app:layout_constraintStart_toEndOf="@id/arusha_vegetation"
+                        app:layout_constraintTop_toBottomOf="@id/arusha_location" />
+
+
+                    <ImageButton
+                        android:background="?android:attr/selectableItemBackground"
+                        android:id="@+id/arusha_funfacts"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="15dp"
+                        app:layout_constraintStart_toEndOf="@id/arusha_location"
+                        app:layout_constraintTop_toTopOf="@id/arusha_location"
+                        app:srcCompat="@drawable/arusha_fact" />
+
+                    <TextView
+                        android:id="@+id/textView11"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="15dp"
+                        android:text="Fun Facts"
+                        android:textColor="@color/black"
+                        android:textSize="14sp"
+                        app:layout_constraintStart_toEndOf="@id/arusha_location"
+                        app:layout_constraintTop_toBottomOf="@id/arusha_funfacts" />
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </HorizontalScrollView>
+
+            <TextView
+                android:id="@+id/mikumiTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:text="Mikumi National Park"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="@id/popularTextView"
+                app:layout_constraintTop_toBottomOf="@id/arusha_view" />
+
+            <HorizontalScrollView
+                android:id="@+id/mikumi_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/mikumiTextView">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent">
+
+                    <ImageButton
+                        android:background="?android:attr/selectableItemBackground"
+                        android:id="@+id/mikumi_background"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:srcCompat="@drawable/mikumi_background" />
+
+                    <TextView
+                        android:id="@+id/textView12"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:text="Park Background"
+                        android:textColor="@color/black"
+                        android:textSize="14sp"
+                        app:layout_constraintStart_toStartOf="@id/mikumi_background"
+                        app:layout_constraintTop_toBottomOf="@id/mikumi_background" />
+
+
+                    <ImageButton
+                        android:background="?android:attr/selectableItemBackground"
+                        android:id="@+id/mikumi_wildlife"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="15dp"
+                        app:layout_constraintStart_toEndOf="@id/mikumi_background"
+                        app:layout_constraintTop_toTopOf="@id/mikumi_background"
+                        app:srcCompat="@drawable/mikumi_wildlife" />
+
+                    <TextView
+                        android:id="@+id/textView13"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="15dp"
+                        android:text="Wildlife"
+                        android:textColor="@color/black"
+                        android:textSize="14sp"
+                        app:layout_constraintStart_toEndOf="@id/mikumi_background"
+                        app:layout_constraintTop_toBottomOf="@id/mikumi_wildlife" />
+
+
+                    <ImageButton
+                        android:background="?android:attr/selectableItemBackground"
+                        android:id="@+id/mikumi_vegetation"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="15dp"
+                        app:layout_constraintStart_toEndOf="@id/mikumi_wildlife"
+                        app:layout_constraintTop_toTopOf="@id/mikumi_wildlife"
+                        app:srcCompat="@drawable/mikumi_vegetation" />
+
+                    <TextView
+                        android:id="@+id/textView14"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="15dp"
+                        android:text="Vegetation"
+                        android:textColor="@color/black"
+                        android:textSize="14sp"
+                        app:layout_constraintStart_toEndOf="@id/mikumi_wildlife"
+                        app:layout_constraintTop_toBottomOf="@id/mikumi_vegetation" />
+
+
+                    <ImageButton
+                        android:background="?android:attr/selectableItemBackground"
+                        android:id="@+id/mikumi_location"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="15dp"
+                        app:layout_constraintStart_toEndOf="@id/mikumi_vegetation"
+                        app:layout_constraintTop_toTopOf="@id/mikumi_vegetation"
+                        app:srcCompat="@drawable/location" />
+
+                    <TextView
+                        android:id="@+id/textView15"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="15dp"
+                        android:text="Location"
+                        android:textColor="@color/black"
+                        android:textSize="14sp"
+                        app:layout_constraintStart_toEndOf="@id/mikumi_vegetation"
+                        app:layout_constraintTop_toBottomOf="@id/mikumi_location" />
+
+
+                    <ImageButton
+                        android:background="?android:attr/selectableItemBackground"
+                        android:id="@+id/mikumi_funfacts"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="15dp"
+                        app:layout_constraintStart_toEndOf="@id/mikumi_location"
+                        app:layout_constraintTop_toTopOf="@id/mikumi_location"
+                        app:srcCompat="@drawable/mikumi_fact" />
+
+                    <TextView
+                        android:id="@+id/textView16"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="15dp"
+                        android:text="Fun Facts"
+                        android:textColor="@color/black"
+                        android:textSize="14sp"
+                        app:layout_constraintStart_toEndOf="@id/mikumi_location"
+                        app:layout_constraintTop_toBottomOf="@id/mikumi_funfacts" />
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </HorizontalScrollView>
+
+            <TextView
+                android:id="@+id/saadaniTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:text="Saadani National Park"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="@id/popularTextView"
+                app:layout_constraintTop_toBottomOf="@id/mikumi_view" />
+
+            <HorizontalScrollView
+                android:id="@+id/saadani_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/saadaniTextView">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent">
+
+                    <ImageButton
+                        android:background="?android:attr/selectableItemBackground"
+                        android:id="@+id/saadani_background"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:srcCompat="@drawable/saadani_background" />
+
+                    <TextView
+                        android:id="@+id/textView17"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:text="Park Background"
+                        android:textColor="@color/black"
+                        android:textSize="14sp"
+                        app:layout_constraintStart_toStartOf="@id/saadani_background"
+                        app:layout_constraintTop_toBottomOf="@id/saadani_background" />
+
+
+                    <ImageButton
+                        android:background="?android:attr/selectableItemBackground"
+                        android:id="@+id/saadani_wildlife"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="15dp"
+                        app:layout_constraintStart_toEndOf="@id/saadani_background"
+                        app:layout_constraintTop_toTopOf="@id/saadani_background"
+                        app:srcCompat="@drawable/saadani_wildlife" />
+
+                    <TextView
+                        android:id="@+id/textView18"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="15dp"
+                        android:text="Wildlife"
+                        android:textColor="@color/black"
+                        android:textSize="14sp"
+                        app:layout_constraintStart_toEndOf="@id/saadani_background"
+                        app:layout_constraintTop_toBottomOf="@id/saadani_wildlife" />
+
+
+                    <ImageButton
+                        android:background="?android:attr/selectableItemBackground"
+                        android:id="@+id/saadani_vegetation"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="15dp"
+                        app:layout_constraintStart_toEndOf="@id/saadani_wildlife"
+                        app:layout_constraintTop_toTopOf="@id/saadani_wildlife"
+                        app:srcCompat="@drawable/saadani_vegetation" />
+
+                    <TextView
+                        android:id="@+id/textView19"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="15dp"
+                        android:text="Vegetation"
+                        android:textColor="@color/black"
+                        android:textSize="14sp"
+                        app:layout_constraintStart_toEndOf="@id/saadani_wildlife"
+                        app:layout_constraintTop_toBottomOf="@id/saadani_vegetation" />
+
+
+                    <ImageButton
+                        android:background="?android:attr/selectableItemBackground"
+                        android:id="@+id/saadani_location"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="15dp"
+                        app:layout_constraintStart_toEndOf="@id/saadani_vegetation"
+                        app:layout_constraintTop_toTopOf="@id/saadani_vegetation"
+                        app:srcCompat="@drawable/location" />
+
+                    <TextView
+                        android:id="@+id/textView20"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="15dp"
+                        android:text="Location"
+                        android:textColor="@color/black"
+                        android:textSize="14sp"
+                        app:layout_constraintStart_toEndOf="@id/saadani_vegetation"
+                        app:layout_constraintTop_toBottomOf="@id/saadani_location" />
+
+
+                    <ImageButton
+                        android:background="?android:attr/selectableItemBackground"
+                        android:id="@+id/saadani_funfacts"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="15dp"
+                        app:layout_constraintStart_toEndOf="@id/saadani_location"
+                        app:layout_constraintTop_toTopOf="@id/saadani_location"
+                        app:srcCompat="@drawable/saadani_fact" />
+
+                    <TextView
+                        android:id="@+id/textView21"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="15dp"
+                        android:text="Fun Facts"
+                        android:textColor="@color/black"
+                        android:textSize="14sp"
+                        app:layout_constraintStart_toEndOf="@id/saadani_location"
+                        app:layout_constraintTop_toBottomOf="@id/saadani_funfacts" />
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </HorizontalScrollView>
+
+            <TextView
+                android:id="@+id/serengetiTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:text="Serengeti National Park"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="@id/popularTextView"
+                app:layout_constraintTop_toBottomOf="@id/saadani_view" />
+
+            <HorizontalScrollView
+                android:id="@+id/serengeti_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/serengetiTextView">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent">
+
+                    <ImageButton
+                        android:background="?android:attr/selectableItemBackground"
+                        android:id="@+id/serengeti_background"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:srcCompat="@drawable/serengeti_background" />
+
+                    <TextView
+                        android:id="@+id/textView22"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:text="Park Background"
+                        android:textColor="@color/black"
+                        android:textSize="14sp"
+                        app:layout_constraintStart_toStartOf="@id/serengeti_background"
+                        app:layout_constraintTop_toBottomOf="@id/serengeti_background" />
+
+
+                    <ImageButton
+                        android:background="?android:attr/selectableItemBackground"
+                        android:id="@+id/serengeti_wildlife"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="15dp"
+                        app:layout_constraintStart_toEndOf="@id/serengeti_background"
+                        app:layout_constraintTop_toTopOf="@id/serengeti_background"
+                        app:srcCompat="@drawable/serengeti_wildlife" />
+
+                    <TextView
+                        android:id="@+id/textView23"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="15dp"
+                        android:text="Wildlife"
+                        android:textColor="@color/black"
+                        android:textSize="14sp"
+                        app:layout_constraintStart_toEndOf="@id/serengeti_background"
+                        app:layout_constraintTop_toBottomOf="@id/serengeti_wildlife" />
+
+
+                    <ImageButton
+                        android:background="?android:attr/selectableItemBackground"
+                        android:id="@+id/serengeti_vegetation"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="15dp"
+                        app:layout_constraintStart_toEndOf="@id/serengeti_wildlife"
+                        app:layout_constraintTop_toTopOf="@id/serengeti_wildlife"
+                        app:srcCompat="@drawable/serengeti_vegetation" />
+
+                    <TextView
+                        android:id="@+id/textView24"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="15dp"
+                        android:text="Vegetation"
+                        android:textColor="@color/black"
+                        android:textSize="14sp"
+                        app:layout_constraintStart_toEndOf="@id/serengeti_wildlife"
+                        app:layout_constraintTop_toBottomOf="@id/serengeti_vegetation" />
+
+
+                    <ImageButton
+                        android:background="?android:attr/selectableItemBackground"
+                        android:id="@+id/serengeti_location"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="15dp"
+                        app:layout_constraintStart_toEndOf="@id/serengeti_vegetation"
+                        app:layout_constraintTop_toTopOf="@id/serengeti_vegetation"
+                        app:srcCompat="@drawable/location" />
+
+                    <TextView
+                        android:id="@+id/textView25"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="15dp"
+                        android:text="Location"
+                        android:textColor="@color/black"
+                        android:textSize="14sp"
+                        app:layout_constraintStart_toEndOf="@id/serengeti_vegetation"
+                        app:layout_constraintTop_toBottomOf="@id/serengeti_location" />
+
+
+                    <ImageButton
+                        android:background="?android:attr/selectableItemBackground"
+                        android:id="@+id/serengeti_funfacts"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="15dp"
+                        app:layout_constraintStart_toEndOf="@id/serengeti_location"
+                        app:layout_constraintTop_toTopOf="@id/serengeti_location"
+                        app:srcCompat="@drawable/serengeti_fact" />
+
+                    <TextView
+                        android:id="@+id/textView26"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="15dp"
+                        android:text="Fun Facts"
+                        android:textColor="@color/black"
+                        android:textSize="14sp"
+                        app:layout_constraintStart_toEndOf="@id/serengeti_location"
+                        app:layout_constraintTop_toBottomOf="@id/serengeti_funfacts" />
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </HorizontalScrollView>
+
+            <TextView
+                android:id="@+id/tarangireTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:text="Tarangire National Park"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="@id/popularTextView"
+                app:layout_constraintTop_toBottomOf="@id/serengeti_view" />
+
+            <HorizontalScrollView
+                android:id="@+id/tarangire_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tarangireTextView">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent">
+
+                    <ImageButton
+                        android:background="?android:attr/selectableItemBackground"
+                        android:id="@+id/tarangire_background"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:srcCompat="@drawable/tarangire_background" />
+
+                    <TextView
+                        android:id="@+id/textView27"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:text="Park Background"
+                        android:textColor="@color/black"
+                        android:textSize="14sp"
+                        app:layout_constraintStart_toStartOf="@id/tarangire_background"
+                        app:layout_constraintTop_toBottomOf="@id/tarangire_background" />
+
+
+                    <ImageButton
+                        android:background="?android:attr/selectableItemBackground"
+                        android:id="@+id/tarangire_wildlife"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="15dp"
+                        app:layout_constraintStart_toEndOf="@id/tarangire_background"
+                        app:layout_constraintTop_toTopOf="@id/tarangire_background"
+                        app:srcCompat="@drawable/tarangire_wildlife" />
+
+                    <TextView
+                        android:id="@+id/textView28"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="15dp"
+                        android:text="Wildlife"
+                        android:textColor="@color/black"
+                        android:textSize="14sp"
+                        app:layout_constraintStart_toEndOf="@id/tarangire_background"
+                        app:layout_constraintTop_toBottomOf="@id/tarangire_wildlife" />
+
+
+                    <ImageButton
+                        android:background="?android:attr/selectableItemBackground"
+                        android:id="@+id/tarangire_vegetation"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="15dp"
+                        app:layout_constraintStart_toEndOf="@id/tarangire_wildlife"
+                        app:layout_constraintTop_toTopOf="@id/tarangire_wildlife"
+                        app:srcCompat="@drawable/tarangire_vegetation" />
+
+                    <TextView
+                        android:id="@+id/textView29"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="15dp"
+                        android:text="Vegetation"
+                        android:textColor="@color/black"
+                        android:textSize="14sp"
+                        app:layout_constraintStart_toEndOf="@id/tarangire_wildlife"
+                        app:layout_constraintTop_toBottomOf="@id/tarangire_vegetation" />
+
+
+                    <ImageButton
+                        android:background="?android:attr/selectableItemBackground"
+                        android:id="@+id/tarangire_location"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="15dp"
+                        app:layout_constraintStart_toEndOf="@id/tarangire_vegetation"
+                        app:layout_constraintTop_toTopOf="@id/tarangire_vegetation"
+                        app:srcCompat="@drawable/location" />
+
+                    <TextView
+                        android:id="@+id/textView30"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="15dp"
+                        android:text="Location"
+                        android:textColor="@color/black"
+                        android:textSize="14sp"
+                        app:layout_constraintStart_toEndOf="@id/tarangire_vegetation"
+                        app:layout_constraintTop_toBottomOf="@id/tarangire_location" />
+
+
+                    <ImageButton
+                        android:background="?android:attr/selectableItemBackground"
+                        android:id="@+id/tarangire_funfacts"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="15dp"
+                        app:layout_constraintStart_toEndOf="@id/tarangire_location"
+                        app:layout_constraintTop_toTopOf="@id/tarangire_location"
+                        app:srcCompat="@drawable/tarangire_fact" />
+
+                    <TextView
+                        android:id="@+id/textView31"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="15dp"
+                        android:text="Fun Facts"
+                        android:textColor="@color/black"
+                        android:textSize="14sp"
+                        app:layout_constraintStart_toEndOf="@id/tarangire_location"
+                        app:layout_constraintTop_toBottomOf="@id/tarangire_funfacts" />
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </HorizontalScrollView>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

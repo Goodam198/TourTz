@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/light_green"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark"/>
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tablayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar"
+        app:tabIndicatorColor="@color/light_green"
+        app:tabMode="scrollable"
+        app:tabTextColor="@color/light_green">
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/beaches"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Beaches" />
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/landscapes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Landscapes" />
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/museums"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Museums" />
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/parks"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Parks" />
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/reserves"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Reserves" />
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/sites"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sites" />
+    </com.google.android.material.tabs.TabLayout>
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/viewpager"
+        android:layout_marginTop="100dp"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tablayout" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

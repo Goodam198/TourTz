@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LandscapesFragment">
+
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/popular_scapes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="15dp"
+                android:text="Popular Landscapes"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <HorizontalScrollView
+                android:id="@+id/popular_scapeview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/popular_scapes">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent">
+
+                    <ImageButton
+                        android:background="?android:attr/selectableItemBackground"
+                        android:id="@+id/kili_pop"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:srcCompat="@drawable/pop_kilimanjaro" />
+
+                    <TextView
+                        android:id="@+id/textView2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Mount Kilimanjaro"
+                        android:textColor="@color/black"
+                        android:textSize="14sp"
+                        app:layout_constraintStart_toStartOf="@id/kili_pop"
+                        app:layout_constraintTop_toBottomOf="@id/kili_pop" />
+
+
+                    <ImageButton
+                        android:background="?android:attr/selectableItemBackground"
+                        android:id="@+id/makonde_pop"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="15dp"
+                        app:layout_constraintStart_toEndOf="@id/kili_pop"
+                        app:layout_constraintTop_toTopOf="@id/kili_pop"
+                        app:srcCompat="@drawable/pop_makondeplateaus" />
+
+                    <TextView
+                        android:id="@+id/textView3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="15dp"
+                        android:text="Makonde Plateaus"
+                        android:textColor="@color/black"
+                        android:textSize="14sp"
+                        app:layout_constraintStart_toEndOf="@id/kili_pop"
+                        app:layout_constraintTop_toBottomOf="@id/makonde_pop" />
+
+
+                    <ImageButton
+                        android:background="?android:attr/selectableItemBackground"
+                        android:id="@+id/ngoro_pop"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="15dp"
+                        app:layout_constraintStart_toEndOf="@id/makonde_pop"
+                        app:layout_constraintTop_toTopOf="@id/makonde_pop"
+                        app:srcCompat="@drawable/pop_ngorocrater" />
+
+                    <TextView
+                        android:id="@+id/textView4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="15dp"
+                        android:text="Ngorongoro Crater"
+                        android:textColor="@color/black"
+                        android:textSize="14sp"
+                        app:layout_constraintStart_toEndOf="@id/makonde_pop"
+                        app:layout_constraintTop_toBottomOf="@id/ngoro_pop" />
+
+
+                    <ImageButton
+                        android:background="?android:attr/selectableItemBackground"
+                        android:id="@+id/serengeti_pop"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="15dp"
+                        app:layout_constraintStart_toEndOf="@id/ngoro_pop"
+                        app:layout_constraintTop_toTopOf="@id/ngoro_pop"
+                        app:srcCompat="@drawable/pop_serengetiplains" />
+
+                    <TextView
+                        android:id="@+id/textView5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="15dp"
+                        android:text="Serengeti Plains"
+                        android:textColor="@color/black"
+                        android:textSize="14sp"
+                        app:layout_constraintStart_toEndOf="@id/ngoro_pop"
+                        app:layout_constraintTop_toBottomOf="@id/serengeti_pop" />
+
+
+                    <ImageButton
+                        android:background="?android:attr/selectableItemBackground"
+                        android:id="@+id/springs_pop"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="15dp"
+                        app:layout_constraintStart_toEndOf="@id/serengeti_pop"
+                        app:layout_constraintTop_toTopOf="@id/serengeti_pop"
+                        app:srcCompat="@drawable/pop_ruahasprings" />
+
+                    <TextView
+                        android:id="@+id/textView6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="15dp"
+                        android:text="Ruaha Springs"
+                        android:textColor="@color/black"
+                        android:textSize="14sp"
+                        app:layout_constraintStart_toEndOf="@id/serengeti_pop"
+                        app:layout_constraintTop_toBottomOf="@id/springs_pop" />
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </HorizontalScrollView>
+
+            <ImageButton
+                android:background="?android:attr/selectableItemBackground"
+                android:id="@+id/kili"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="15dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/popular_scapeview"
+                app:srcCompat="@drawable/kilimanjaro" />
+
+            <TextView
+                android:id="@+id/kiliTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Kilimanjaro Mountain"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="@id/kili"
+                app:layout_constraintTop_toBottomOf="@id/kili" />
+
+
+            <ImageButton
+                android:background="?android:attr/selectableItemBackground"
+                android:id="@+id/makonde"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                app:layout_constraintStart_toStartOf="@id/kili"
+                app:layout_constraintTop_toBottomOf="@id/kiliTextView"
+                app:srcCompat="@drawable/makonde_plateus" />
+
+            <TextView
+                android:id="@+id/makondeTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Makonde Plateaus"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="@id/kili"
+                app:layout_constraintTop_toBottomOf="@id/makonde" />
+
+
+            <ImageButton
+                android:background="?android:attr/selectableItemBackground"
+                android:id="@+id/ngoro"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                app:layout_constraintStart_toStartOf="@id/kili"
+                app:layout_constraintTop_toBottomOf="@id/makondeTextView"
+                app:srcCompat="@drawable/ngoro_crater" />
+
+            <TextView
+                android:id="@+id/ngoroTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ngorongoro Crater"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="@id/kili"
+                app:layout_constraintTop_toBottomOf="@id/ngoro" />
+
+
+            <ImageButton
+                android:background="?android:attr/selectableItemBackground"
+                android:id="@+id/plains"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                app:layout_constraintStart_toStartOf="@id/kili"
+                app:layout_constraintTop_toBottomOf="@id/ngoroTextView"
+                app:srcCompat="@drawable/serengeti_plains"/>
+
+            <TextView
+                android:id="@+id/plainsTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Serengeti Plains"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="@id/kili"
+                app:layout_constraintTop_toBottomOf="@id/plains" />
+
+
+
+            <ImageButton
+                android:background="?android:attr/selectableItemBackground"
+                android:id="@+id/springs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                app:layout_constraintStart_toStartOf="@id/kili"
+                app:layout_constraintTop_toBottomOf="@id/plainsTextView"
+                app:srcCompat="@drawable/ruaha_springs" />
+
+            <TextView
+                android:id="@+id/springsTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ruaha Springs"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="@id/kili"
+                app:layout_constraintTop_toBottomOf="@id/springs" />
+
+
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

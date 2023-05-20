@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/home"
+            android:title="Home"
+            android:icon="@drawable/ic_baseline_home_24"
+            />
+        <item
+            android:id="@+id/favourites"
+            android:title="Favourites"
+            android:icon="@drawable/ic_baseline_favorite_border_24"
+            />
+        <item
+            android:id="@+id/profile"
+            android:title="Profile"
+            android:icon="@drawable/ic_baseline_person_outline_24"
+            />
+
+    </group>
+
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:title="More">
+
+            <menu>
+                <item
+                    android:id="@+id/about"
+                    android:icon="@drawable/ic_baseline_person_outline_24"
+                    android:title="About" />
+
+                <item
+                    android:id="@+id/explore"
+                    android:icon="@drawable/ic_baseline_explore_24"
+                    android:title="Explore" />
+
+                <item
+                    android:id="@+id/copy"
+                    android:icon="@drawable/ic_baseline_copyright_24"
+                    android:title="Copyright" />
+
+            </menu>
+
+        </item>
+
+    </group>
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:title="Customize">
+
+            <menu>
+
+                <item
+                    android:id="@+id/settings"
+                    android:title="Settings"
+                    android:icon="@drawable/ic_baseline_settings_24"
+                    />
+            </menu>
+
+        </item>
+
+    </group>
+
+
+</menu>

@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BeachesFragment">
+
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/popular_beaches"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="Popular Beaches"
+                android:layout_marginLeft="10dp"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <HorizontalScrollView
+                android:id="@+id/popular_beachview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/popular_beaches">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent">
+
+                    <ImageButton
+                        android:background="?android:attr/selectableItemBackground"
+                        android:id="@+id/coco_pop"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:srcCompat="@drawable/pop_coco" />
+
+                    <TextView
+                        android:id="@+id/textView2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Coco Beach"
+                        android:textColor="@color/black"
+                        android:textSize="14sp"
+                        app:layout_constraintStart_toStartOf="@id/coco_pop"
+                        app:layout_constraintTop_toBottomOf="@id/coco_pop" />
+
+
+                    <ImageButton
+                        android:background="?android:attr/selectableItemBackground"
+                        android:id="@+id/kunduchi_pop"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="15dp"
+                        app:layout_constraintStart_toEndOf="@id/coco_pop"
+                        app:layout_constraintTop_toTopOf="@id/coco_pop"
+                        app:srcCompat="@drawable/pop_kunduchi" />
+
+                    <TextView
+                        android:id="@+id/textView3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="15dp"
+                        android:text="Kunduchi Beach"
+                        android:textColor="@color/black"
+                        android:textSize="14sp"
+                        app:layout_constraintStart_toEndOf="@id/coco_pop"
+                        app:layout_constraintTop_toBottomOf="@id/kunduchi_pop" />
+
+
+                    <ImageButton
+                        android:background="?android:attr/selectableItemBackground"
+                        android:id="@+id/mbezi_pop"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="15dp"
+                        app:layout_constraintStart_toEndOf="@id/kunduchi_pop"
+                        app:layout_constraintTop_toTopOf="@id/kunduchi_pop"
+                        app:srcCompat="@drawable/pop_mbezi" />
+
+                    <TextView
+                        android:id="@+id/textView4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="15dp"
+                        android:text="Mbezi Beach"
+                        android:textColor="@color/black"
+                        android:textSize="14sp"
+                        app:layout_constraintStart_toEndOf="@id/kunduchi_pop"
+                        app:layout_constraintTop_toBottomOf="@id/mbezi_pop" />
+
+
+                    <ImageButton
+                        android:background="?android:attr/selectableItemBackground"
+                        android:id="@+id/mbudya_pop"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="15dp"
+                        app:layout_constraintStart_toEndOf="@id/mbezi_pop"
+                        app:layout_constraintTop_toTopOf="@id/mbezi_pop"
+                        app:srcCompat="@drawable/pop_mbudya" />
+
+                    <TextView
+                        android:id="@+id/textView5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="15dp"
+                        android:text="Mbudya Island"
+                        android:textColor="@color/black"
+                        android:textSize="14sp"
+                        app:layout_constraintStart_toEndOf="@id/mbezi_pop"
+                        app:layout_constraintTop_toBottomOf="@id/mbudya_pop" />
+
+
+                    <ImageButton
+                        android:background="?android:attr/selectableItemBackground"
+                        android:id="@+id/mikadi_pop"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="15dp"
+                        app:layout_constraintStart_toEndOf="@id/mbudya_pop"
+                        app:layout_constraintTop_toTopOf="@id/mbudya_pop"
+                        app:srcCompat="@drawable/pop_mikadi" />
+
+                    <TextView
+                        android:id="@+id/textView6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="15dp"
+                        android:text="Mikadi Beach"
+                        android:textColor="@color/black"
+                        android:textSize="14sp"
+                        app:layout_constraintStart_toEndOf="@id/mbudya_pop"
+                        app:layout_constraintTop_toBottomOf="@id/mikadi_pop" />
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </HorizontalScrollView>
+
+            <ImageButton
+                android:background="?android:attr/selectableItemBackground"
+                android:id="@+id/coco"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="15dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/popular_beachview"
+                app:srcCompat="@drawable/coco" />
+
+            <TextView
+                android:id="@+id/cocoTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Coco Beach"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="@id/coco"
+                app:layout_constraintTop_toBottomOf="@id/coco" />
+
+
+            <ImageButton
+                android:background="?android:attr/selectableItemBackground"
+                android:id="@+id/kunduchi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                app:layout_constraintStart_toStartOf="@id/coco"
+                app:layout_constraintTop_toBottomOf="@id/cocoTextView"
+                app:srcCompat="@drawable/kunduchi" />
+
+            <TextView
+                android:id="@+id/kunduchiTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Kunduchi Beach"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="@id/coco"
+                app:layout_constraintTop_toBottomOf="@id/kunduchi" />
+
+
+            <ImageButton
+                android:background="?android:attr/selectableItemBackground"
+                android:id="@+id/mbezi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                app:layout_constraintStart_toStartOf="@id/coco"
+                app:layout_constraintTop_toBottomOf="@id/kunduchiTextView"
+                app:srcCompat="@drawable/mbezi" />
+
+            <TextView
+                android:id="@+id/mbeziTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mbezi Beach"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="@id/coco"
+                app:layout_constraintTop_toBottomOf="@id/mbezi" />
+
+
+            <ImageButton
+                android:background="?android:attr/selectableItemBackground"
+                android:id="@+id/mbudya"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                app:layout_constraintStart_toStartOf="@id/coco"
+                app:layout_constraintTop_toBottomOf="@id/mbeziTextView"
+                app:srcCompat="@drawable/mbudya" />
+
+            <TextView
+                android:id="@+id/mbudyaTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mbudya Island"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="@id/coco"
+                app:layout_constraintTop_toBottomOf="@id/mbudya" />
+
+
+
+            <ImageButton
+                android:background="?android:attr/selectableItemBackground"
+                android:id="@+id/mikadi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                app:layout_constraintStart_toStartOf="@id/coco"
+                app:layout_constraintTop_toBottomOf="@id/mbudyaTextView"
+                app:srcCompat="@drawable/mikadi" />
+
+            <TextView
+                android:id="@+id/mikadiTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mikadi Beach"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="@id/coco"
+                app:layout_constraintTop_toBottomOf="@id/mikadi" />
+
+
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
